@@ -31,6 +31,7 @@ class ForeignIdColumnDefinition extends ColumnDefinition
      * Create a foreign key constraint on this column referencing the "id" column of the conventionally related table.
      *
      * @param  string|null  $table
+     * @param string $table
      * @return \Illuminate\Support\Fluent|\Illuminate\Database\Schema\ForeignKeyDefinition
      */
     public function constrained($table = null)
@@ -42,6 +43,7 @@ class ForeignIdColumnDefinition extends ColumnDefinition
      * Specify which column this foreign ID references on another table.
      *
      * @param  string  $column
+     * @param string $column
      * @return \Illuminate\Support\Fluent|\Illuminate\Database\Schema\ForeignKeyDefinition
      */
     public function references($column)
